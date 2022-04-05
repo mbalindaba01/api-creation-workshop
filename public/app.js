@@ -1,3 +1,4 @@
+
 let seasonFilter = 'All';
 let genderFilter = 'All';
 

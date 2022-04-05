@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbalindaba01/api-creation-workshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbalindaba01/api-creation-workshop/issues"
+  },
+  "homepage": "https://github.com/mbalindaba01/api-creation-workshop#readme"
 }
