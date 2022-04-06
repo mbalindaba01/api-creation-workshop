@@ -15,8 +15,8 @@ Create these roots:
 
 API route    | Type | Parameters | Description
 -------------|------|-------- | --------
-`/api/login` | POST | `{username : 'username_to_login' }` | Create a JWT token - the token should store the username. The API should only create a token if the supplied username is a valid username in the [jsonplaceholder users API] (https://jsonplaceholder.typicode.com/)
-`/api/posts` | GET  | none | Return all the posts for the username stored in the token. The end point is not accessible without a valid JWT token. Use the token created by the call to `/api/login`.
+`/api/login` | POST | `{username : 'username_to_login' }` | Create a JWT token - the token should store the username. The API should only create a token if the supplied username is a valid username in the [jsonplaceholder users API](https://jsonplaceholder.typicode.com/). The route should return the created key like this `{ key : `the_key_here` }`
+`/api/posts` | GET  | none | Return all the posts for the username stored in the token. The end point is not accessible without a valid JWT token.
 
 The token should be expire after 5 minutes. Experiment with different token expiration, times.
 
