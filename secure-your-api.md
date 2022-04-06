@@ -23,10 +23,10 @@ The token should be expire after 5 minutes. Experiment with different token expi
 The token is to be sent in as a BEARER token in the header or the request.
 
 Use:
-	* ExpressJS with [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) to create the tokens
-	* [dotenv](https://www.npmjs.com/package/dotenv) to read the token secret from a `.env` file
-	* axios to call the [jsonplaceholder API](https://jsonplaceholder.typicode.com/users)
-	* Thunder Client in VSCode to test this API
+* ExpressJS with [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) to create the tokens
+* [dotenv](https://www.npmjs.com/package/dotenv) to read the token secret from a `.env` file
+* axios to call the [jsonplaceholder API](https://jsonplaceholder.typicode.com/users)
+* Thunder Client in VSCode to test this API
 
 Use these calls on the JSON placeholder API
 
@@ -52,7 +52,7 @@ Add a JWT token to your Missy Tee API.
 
 Create the token by creating it [online here](https://jwt.io/).
 
-Use the created token in your app using [jswonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
+Use the created token in your app using by decoding it with [jswonwebtoken](https://www.npmjs.com/package/jsonwebtoken). Use the default encryption & the same secret to encode sign & decode.ß
 
 The token should expire after 24 hours.
 
