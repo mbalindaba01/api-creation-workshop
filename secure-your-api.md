@@ -50,6 +50,10 @@ npm install express dotenv jsonwebtoken axios
 
 Add a JWT token to your Missy Tee API.
 
+Create the token by creating it [online here](https://jwt.io/).
+
+Use the created token in your app using [jswonwebtoken](https://www.npmjs.com/package/jsonwebtoken).
+
 The token should expire after 24 hours.
 
 Store your own GitHub username in the token.
