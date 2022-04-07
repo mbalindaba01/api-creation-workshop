@@ -31,6 +31,8 @@ function filterData() {
 		});
 }
 
+
+
 priceRangeElem.addEventListener('change', function(evt){
 	const maxPrice = evt.target.value;
 	showPriceRangeElem.innerHTML = maxPrice;
@@ -42,5 +44,6 @@ priceRangeElem.addEventListener('change', function(evt){
 			})
 		});
 });
+
 
 filterData();

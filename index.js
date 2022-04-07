@@ -4,6 +4,9 @@ const garments = require('./garments.json')
 const app = express()
 
 app.use(express.static('public'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
 
 app.get('/api/garments', (req, res) => {
     const gender = req.query.gender
@@ -25,6 +28,39 @@ app.get('/api/garments', (req, res) => {
         garments: filteredGarments
     })
 })
+
+
+app.post('/api/garments', (req, res) => {
+
+	const {
+		description,
+		img,
+		gender,
+		season,
+		price
+	} = req.body;
+
+	if (!description || !img || !price) {
+		res.json({
+			status: 'error',
+			message: 'Required data not supplied',
+		});
+	} else {
+		garments.push({
+			description,
+			img,
+			gender,
+			season,
+			price
+		});
+
+		res.json({
+			status: 'success',
+			message: 'New garment added.',
+		});
+	}
+});
+
 
 app.get('/api/garments/price/:price', (req, res) => {
     const maxPrice = Number(req.params.price)
