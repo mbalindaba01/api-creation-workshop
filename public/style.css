@@ -31,3 +31,54 @@ img {
 	margin: 0.25em;
 	border-radius: 0.5em;
 }
+
+.hidden {
+	display: none;
+}
+
+.field label {
+	display: block;
+	width: 5em;
+	margin-top: 0.5em;
+}
+
+.mt1 {
+	margin-top: 1em;
+}
+
+
+.message {
+
+	margin-top: 1em;
+	padding: 1em;
+
+	background-color: lightsalmon;
+
+
+}
+
+.top-section {
+	display: flex;
+}
+
+.filter {
+	flex : 1;
+}
+
+.cart {
+	flex : 1;
+	/* border: 1px solid; */
+	z-index: 999;
+	padding: 1em;
+	border-radius: 0.25em;
+	background-color: lightgreen;
+}
+
+.cart table {
+	width: 100%;
+}
+
+th, td {
+	padding: 0.25em;
+	text-align: left;
+}
