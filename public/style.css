@@ -56,3 +56,29 @@ img {
 
 
 }
+
+.top-section {
+	display: flex;
+}
+
+.filter {
+	flex : 1;
+}
+
+.cart {
+	flex : 1;
+	/* border: 1px solid; */
+	z-index: 999;
+	padding: 1em;
+	border-radius: 0.25em;
+	background-color: lightgreen;
+}
+
+.cart table {
+	width: 100%;
+}
+
+th, td {
+	padding: 0.25em;
+	text-align: left;
+}
