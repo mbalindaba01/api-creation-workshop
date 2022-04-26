@@ -9,6 +9,25 @@ body {
 	width: 60%;
 }
 
+.hide {
+	display: none;
+}
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        padding: 0;
+        overflow:hidden;
+    }
+}
+
+.error-message {
+	display: none;
+	color: red;
+	animation: cssAnimation 0s ease-in 2s forwards;
+}
+
 img {
 	display: inline-block;
 }

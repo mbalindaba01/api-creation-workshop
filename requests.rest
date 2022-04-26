@@ -1,0 +1,14 @@
+GET http://localhost:4017/api/garments/price/200
+
+###
+
+POST http://localhost:4017/auth 
+Content-Type: application/json
+
+{
+    "username": "mbali"
+}
+
+### 
+
+POST http://localhost:4017/api/garments

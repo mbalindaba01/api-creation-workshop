@@ -42,12 +42,16 @@
 	<div class="container" >
 		<h1>Missy Tee - clothing store</h1>
 
-		<div class="login hidden">
-			<strong>Logged in as</strong> <span class="username" >@avermeulen</span>
+		<div class="login">
+			<label>Enter your username: <input type="text" id="username" /></label>
+			<button class="loginBtn">Login</button>
+		</div>
+		<div class="error-message">
+			<h2>Unauthorized User. Access Denied</h2>
 		</div>
 
 		<div class="top-section">
-			<div class="filter" >
+			<div class="filter hidden" >
 				<h2>Filter</h2>
 				<div class="genders" >
 					<label>
@@ -126,7 +130,7 @@
 
 		</div>
 
-		<div class="addGarment" >
+		<div class="addGarment hidden" >
 			
 			<div class="add button mt1" >
 				<a href="">Add garment</a>
@@ -173,7 +177,8 @@
 
 		
 
-		<div>
+		<div class="garments hidden">
+
 			<h2>Garments</h2>
 			
 			<div class="searchResults" >
